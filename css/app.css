@@ -1,0 +1,109 @@
+/* EL ROOT AYUDA A QUE SE PUEDAN REESCRIBIR LOS COLORES */
+:root {
+  --bs-blue: #037bc0;
+  --bs-green: #8cbc00;
+}
+
+html {
+  font-size: 62.5%; /*CONVIERTE UN rem EN 10px*/
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2; /*INTERLINEADO*/
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/******** TAMAÑO DE LOS HEADDINGS PARA EVITAR MOLESTIAS AL HACER RESPONSIVE********** */
+h1 {
+  font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* REESCRIBIR LOS COLORES CON EL ! PARA PODERLOS UTILIZAR */
+.text-primary,
+.nombre-sitio {
+  color: var(--bs-blue) !important;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--bs-blue) !important;
+}
+
+.btn-success {
+  background-color: var(--bs-green) !important;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 25rem;
+  background-size: cover;
+  background-position: center center; /*PERMITE AGRANDAR DESDE EL CENTRO MEJORA IMAGEN*/
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
+}
+
+/* OPCION QUE PERMITE AL CREAR LA CLASE producto MODIFICAR EL TAMAÑO DE LA IMAGEN */
+/* CREAMOS UNA CLASE QUE PERMITA .producto QUE PERMITE HACER MODIFICACIONES A LA IMAGEN */
+@media (min-width: 768px) {
+  .producto img {
+    height: 45rem;
+    width: 100%;
+    object-fit: cover; /*EL object-fit PERMITE QUE LA IMAGEN NO SE DAÑE Y CUBRA TODO*/
+  }
+}
+
+/* CREE LA CLASE categoria PARA PODERLE HACER CAMBIOS Y ANIMACIONES A LAS IMAGENES */
+.categoria img {
+  transition-property: transform;
+  transition-duration: 300ms; /*SEGUNDOS*/
+}
+.categoria img:hover {
+  transform: scale(1.2);
+}
+
+.galeria li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 1rem;
+  font-size: 1.6rem;
+}

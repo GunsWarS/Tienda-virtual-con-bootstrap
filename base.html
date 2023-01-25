@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Nombre Pagina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <!-- -----------------------------TITULO------------------------------------- -->
+    <header class="py-5">
+        <h1 class="text-center">
+            Tienda
+            <span class="text-primary"> Muebles</span>
+        </h1>
+    </header>
+
+
+    <div class="border-top py-4">
+        <!--EL border-top COLOCA UNA LINEA DIVISORA ENTRE EL TITULO Y EL MENU EL py-4 LE AGREGA ALGO DE PADDING PARA QUE NO QUEDE TAN PEGADO LA LINEA ENTRE LOS DOS -->
+
+        <!-- EL d= DISPLAY, EL d-lg-none LE DICE AL NAVEGADOR QUE A UN TAMAÑO GDE NO LO MUESTRE Y SOLO LO MUESTRE CUANDO ESTE EN MENOR TAMAÑO EL NAVEGADOR  -->
+        <!-- fs= FONT-SIZE EN ESTE CASO font-size de 2 -->
+        <!-- el fw-bold COLOCA EL TEXTO EN NEGRITA -->
+        <!-- EL text-uppercase COLOCA EL TEXTO EN MAYUSCULA -->
+        <div class="navbar navbar-expand-lg container navbar-light">
+            <!--EL navbar-expand-lg ESCONDE EL BOTON DE ABRIR EL MENU CUANDO EL TAMAÑO DEL NAVEGADOR ES EL ORIGINAL GRANDE no responsive, EL container LO CENTRA, EL navbar-light HABILITA EL ICONO QUE PERMITE MOSTRAR EL MENU-->
+            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html">
+                Tienda Muebles
+            </a>
+
+            <!-- EL navbar-toggler-icon MUESTRA UN CUADRO QUE SERA EL ICONO DEL MENU VERTICAL A MENOR TAMAÑO  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!---------------------------- BARRA DE NAVEGACION--------------------------- -->
+
+            <!-- EL ID id="#navegacion" PERMITE SER LLAMADO EN EL button -->
+            <div id="navegacion" class="collapse navbar-collapse">
+
+                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
+                    <!--EL navbar-nav CREA UNA BARRA DE NAVEGACION VERTICAL EL container LO QUE HACE ES CENTRAR UN POCO ESE CONTENIDO  Y EL text-center CENTRA TODO ESE CONTENIDO EN PANTALLA,
+    EL d-flex flex-md-row ACOMODA EL TEXTO DENTRO DE LA PAGINA DE MANERA HORIZONTAL Y AL BAJAR DE TAMAÑO LA PANTALLA (RESPONSIVE) LO MUESTRA DE MANERA VERTICAL-->
+                    <!--EL justify-content-md-between PERMITE DISTRIBUIR LAS a CON ESPACIOS ENTRE ELLOS   -->
+                    <a class="text-dark text-decoration-none"
+                        href="index.html">Inicio</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                    <a class="text-dark text-decoration-none"
+                        href="nosotros.html">Nosotros</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                    <a class="text-dark text-decoration-none"
+                        href="tienda.html">Tienda</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                    <a class="text-dark text-decoration-none"
+                        href="blog.html">Blog</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                    <a class="text-dark text-decoration-none"
+                        href="galeria.html">Galeria</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                    <a class="text-dark text-decoration-none"
+                        href="contacto.html">Contacto</a><!--EL text-dark CAMBIA EL COLOR LETRA,Y EL text-decoration-none QUITA EL SUBRAYADO DE LOS ENLACES-->
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--*************************** TEXTO DE NUESTROS PRODUCTOS************************* -->
+
+    <!-- EL xl DEL CONTAINER PRINCIPAL DEL main PERMITE QUE LA IMAGEN CON TEXTO AL HACER RESPONSIVE NO SE DESPROPORCIONO QUEDANO BIEN ADAPTADO A MENORES RESOLUCIONES -->
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5">Nombre de la pagina</h2>
+        <!-- ------------------------------------------------------------------------------- -->
+
+
+
+    </main>
+
+
+    <!-- *****************FOOTER LINEA DIVISORA Y CATEGORIAS**************************** -->
+
+
+    <!-- EL border-top CREA LA LINEA QUE DIVIDE LA SECCION DE LAS 3 ULTIMAS TARJETAS CON EL FOOTER -->
+    <footer class="pt-5 mt-5 border-top">
+        <div class="container-xl mt-5">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+
+                    <!---------------------------- SECCION CATEGORIAS----------------------------------- -->
+                    <h3 class="mb-4">Categorias</h3><!--EL mb-4 SEPARA LOS TEXTOS-->
+
+                    <!--EL d-flex flex-column CAMBIA LA DIRECION PARA QUE PASE DE HORIZONTAL A VERTICAL  -->
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                        <a class="text-dark text-decoration-none" href="#">Oficina</a>
+                        <a class="text-dark text-decoration-none" href="#">Jardin</a>
+                        <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                        <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <!--------------------------- SOBRE NOSOTROS---------------------------------------- -->
+                    <h3 class="mb-4">Sobre Nosotros</h3><!--EL mb-4 SEPARA LOS TEXTOS-->
+
+                    <!--EL d-flex flex-column CAMBIA LA DIRECION PARA QUE PASE DE HORIZONTAL A VERTICAL  -->
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Nuestra Historia</a>
+                        <a class="text-dark text-decoration-none" href="#">Mision, Vision y valores</a>
+                        <a class="text-dark text-decoration-none" href="#">Carreras</a>
+                        <a class="text-dark text-decoration-none" href="#">Politica de Privacidad</a>
+                        <a class="text-dark text-decoration-none" href="#">Termino de Servicio</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <!--------------------------------------- SOPORTE---------------------------------- -->
+                    <h3 class="mb-4">Soporte</h3><!--EL mb-4 SEPARA LOS TEXTOS-->
+
+                    <!--EL d-flex flex-column CAMBIA LA DIRECION PARA QUE PASE DE HORIZONTAL A VERTICAL  -->
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                        <a class="text-dark text-decoration-none" href="#">Ayuda en Linea</a>
+                        <a class="text-dark text-decoration-none" href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center fs-2">Todos los derechos Reservados. TiendaMuebles</p>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
